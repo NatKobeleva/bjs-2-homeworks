@@ -18,14 +18,13 @@ function solveEquation(a, b, c) {
 	}
 }
 
+
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	if (isNaN(percent) || isNaN(contribution) || isNaN(amount) || isNaN(countMonths)) {
 		percent = Number(percent);
 		contribution = Number(contribution);
 		amount = Number(amount);
 		countMonths = Number(countMonths);
-	} else {
-		return false;
 	}
 
 	let monthlyPercent = percent / 100 / 12;
